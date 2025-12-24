@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Document;
 use Illuminate\Http\Request;
 use App\Http\Resources\DocumentResource;
+use App\Models\Country;
 use Illuminate\Support\Facades\Gate;
 
 class DocumentsController extends Controller
@@ -153,5 +154,9 @@ class DocumentsController extends Controller
                 ]
             ]
         ]);
+
+        // //fetch countries
+
+        // $countries = Country::all();
     }
 }
